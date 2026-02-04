@@ -19,6 +19,7 @@ javascript-project/
 └── LICENSE             # License file (MIT by default)
 
 ```
+```
 Example Files
 
 src/index.js
@@ -28,7 +29,8 @@ import { greet } from "./utils.js";
 function main() {
   console.log(greet("Imran"));
 }
-
+```
+```
 main();
 src/utils.js
 javascript
@@ -36,15 +38,23 @@ export function greet(name) {
   return `Hello, ${name}! Welcome to JavaScript repo.`;
 }
 
+```
+```
 export function add(a, b) {
   return a + b;
 }
+```
+```
 tests/utils.test.js
 javascript
 import { add } from "../src/utils.js";
 
+```
+```
 console.assert(add(2, 3) === 5, "Add function failed!");
-console.log("All tests passed ✅");
+console.log("All tests passed");
+```
+```
 package.json
 json
 {
@@ -56,5 +66,8 @@ json
     "start": "node src/index.js",
     "test": "node tests/utils.test.js"
   },
+```
+```
   "author": "Imran",
   "license": "MIT"
+```
